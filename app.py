@@ -14,6 +14,7 @@ def main():
 
     st.sidebar.title("Binary Classification")
     st.sidebar.markdown("Are your mushroom edible or poisonous?")
+    st.set_option('deprecation.showPyplotGlobalUse', False)
 
     @st.cache(persist = True)
     def load_data():
